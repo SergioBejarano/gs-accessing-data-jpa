@@ -1,3 +1,14 @@
+Execute the next command for run application:
+
+```bash
+./mvnw spring-boot:run
+```
+
+
+![Captura de pantalla](images/evidencia.png)
+
+
+
 :toc:
 :tabsize: 4
 :icons: font
