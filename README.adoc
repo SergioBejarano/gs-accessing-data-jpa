@@ -1,12 +1,45 @@
 
+# Spring Boot JPA Customer Management Application
+
 ## Evidence
 Execute the next command for run application:
 
 image::images/evidencia.png[Captura de pantalla]
 
-### Author: Sergio Bejarano
 
-## ------------------------------------------------------------------------------------------------------------
+## How This Application Works with JPA
+
+### What is JPA?
+JPA (Java Persistence API) is a Java specification that lets you work with databases using Java objects instead of writing SQL queries manually. This application demonstrates basic database operations using Spring Data JPA.
+
+### Application Components
+
+**Customer Entity** - A simple Java class representing a customer with ID, first name, and last name. The `@Entity` annotation tells JPA to store this as a database table.
+
+**CustomerRepository** - An interface that extends `CrudRepository` to provide automatic database operations like save, delete, and find. Spring automatically creates the implementation.
+
+**Main Application** - Demonstrates how to save customers to the database and retrieve them using different methods like `findAll()`, `findById()`, and `findByLastName()`.
+
+### How It Works
+1. Spring Boot automatically sets up an in-memory H2 database
+2. JPA creates a customer table based on the Customer entity  
+3. The application saves sample customers and shows different ways to query them
+4. No SQL code required - everything is handled through Java objects
+
+## EC2 Console Report
+The detailed EC2 console deployment report can be found at:
+`EVIDENCIA INFORME EC2 CONSOLA/informeEC2-consola.pdf`
+
+image::images/consola.png[Captura de pantalla]
+
+
+---
+
+### By: Sergio Bejarano
+
+---
+
+# Original Spring Guide Documentation
 
 
 :toc:
